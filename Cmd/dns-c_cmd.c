@@ -255,6 +255,8 @@ CPU_INT16S  DNScCmd_GetHost (CPU_INT16U        argc,
 
 
     status = DNSc_GetHost(p_argv[1],
+                          DEF_NULL,
+                          (CPU_INT32U)0,
                           addrs,
                          &addr_ctr,
                           DNSc_FLAG_NONE,
